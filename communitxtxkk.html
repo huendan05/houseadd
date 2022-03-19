@@ -169,7 +169,7 @@
     var map = new BMap.Map("allmap"); // 创建Map实例
    // var point = new BMap.Point(112.944826,27.901251); //地图中心点，湘潭市
     var point = new BMap.Point(112.960094,27.784215); //地图中心点，湘潭市
-    map.centerAndZoom(point, 16); // 初始化地图,设置中心点坐标和地图级别。
+    map.centerAndZoom(point, 14); // 初始化地图,设置中心点坐标和地图级别。
     map.enableScrollWheelZoom(true); //启用滚轮放大缩小
     //地图、卫星、混合模式切换
     map.addControl(new BMap.MapTypeControl({mapTypes: [BMAP_NORMAL_MAP, BMAP_SATELLITE_MAP, BMAP_HYBRID_MAP]}));
@@ -377,7 +377,6 @@
     } 
 
 	//下拉菜单点击事件
-	showhouse();
     function checkSelect(value){
         switch  (value){
 		    case 'qb':
